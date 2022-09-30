@@ -1,5 +1,5 @@
 import Carousel from 'react-elastic-carousel';
-import {Container, Image} from "@chakra-ui/react"
+import {Image} from "@chakra-ui/react"
 function Carousell(){
     
         return (
