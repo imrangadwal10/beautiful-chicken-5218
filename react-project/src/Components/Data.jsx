@@ -110,7 +110,7 @@ import {AiOutlineLike,AiOutlineHome} from "react-icons/ai";
    ]
 
    export let imgData=[
-       {img:"https://cdn01.pharmeasy.in/dam/banner/banner/19a254ab992-SB.jpg?dim=1440x0"},
+       {img:"https://cdn01.pharmeasy.in/dam/banner/banner/83f4ac3edc1-HHSSB.jpg?dim=1440x0"},
        {img:"https://cdn01.pharmeasy.in/dam/banner/banner/0e50d93c5e4-Beone-SB.jpg?dim=1440x0"},
        {img:"https://cdn01.pharmeasy.in/dam/banner/banner/3333e696122-Himalayababym.jpg?dim=1440x0"},
        {img:"https://cdn01.pharmeasy.in/dam/banner/banner/ce21906da9d-Toothsiseconda.jpg?dim=1440x0"},
