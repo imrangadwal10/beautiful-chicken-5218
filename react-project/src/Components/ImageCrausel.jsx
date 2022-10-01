@@ -1,14 +1,22 @@
 import Carousel from 'react-elastic-carousel';
-import {Container, Image} from "@chakra-ui/react"
+import {Image} from "@chakra-ui/react"
 import {imgData} from "./Data"
-function ImageCrausel(){
+import {Navigate,useNavigate} from "react-router-dom"
+
+function ImageCrausel(){       
+    const nav=useNavigate()
     
+    function handleClick(){ 
+         nav("/health")
+        }
+
+
         return (
             <>
             <Carousel itemPadding={[10, 10]} itemsToShow={4}>
                {
                 imgData.map((el)=>{
-                    return <Image src={el.img}/>
+                    return <Image onClick={handleClick} src={el.img}/>
                 })
                }   
  
