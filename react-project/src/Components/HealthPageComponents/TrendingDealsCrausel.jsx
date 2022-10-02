@@ -8,7 +8,7 @@ function TrendingDealsCrausel(){
             <Carousel itemPadding={[10, 10]}  itemsToShow={5.5}>
                  {
                     trendingDealsData.map((el)=>{
-                    return     <Image src={el.img}></Image>
+                    return     <Image _hover={{transform: "scale(1.1)"}} src={el.img}></Image>
                     })
                  }
  

@@ -16,7 +16,7 @@ function ImageCrausel(){
             <Carousel itemPadding={[10, 10]} itemsToShow={4}>
                {
                 imgData.map((el)=>{
-                    return <Image onClick={handleClick} src={el.img}/>
+                    return <Image _hover={{cursor: "pointer"}} onClick={handleClick} src={el.img}/>
                 })
                }   
  

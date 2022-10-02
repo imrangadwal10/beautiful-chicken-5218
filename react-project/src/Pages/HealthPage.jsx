@@ -45,7 +45,7 @@ function Health(){
         {
             discountData.map((el)=>{
                  return  <Box  key={el.src}>
-                     <Image  src={el.img}></Image>
+                     <Image _hover={{transform: "scale(1.1)"}} src={el.img}></Image>
                  </Box>
                      
             })
@@ -58,7 +58,7 @@ function Health(){
         {
             brandsData.map((el)=>{
                  return  <Box  key={el.src}>
-                     <Image  src={el.img}></Image>
+                     <Image _hover={{transform: "scale(1.1)"}} src={el.img}></Image>
                  </Box>
                      
             })
@@ -78,7 +78,7 @@ function Health(){
         {
             shopByCatetoryImgData.map((el)=>{
                  return  <Box  key={el.src}>
-                     <Image  src={el.img}></Image>
+                     <Image _hover={{transform: "scale(1.1)"}} src={el.img}></Image>
                  </Box>
                      
             })
