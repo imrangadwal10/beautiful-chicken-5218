@@ -6,7 +6,7 @@ function HealthArticlesCrausel(){
          return   <Carousel itemPadding={[10, 10]}   itemsToShow={5.5}>
             {
                  healthArticlesData.map((el)=>{
-                      return <Box p={5} _hover={{boxShadow:"lg",rounded:'lg'}} textAlign={"center"}>
+                      return <Box p={5} key={el.img} _hover={{boxShadow:"lg",rounded:'lg'}} textAlign={"center"}>
                                <Image src={el.img}></Image>
                                <Text>{el.text}</Text>
                       </Box>
