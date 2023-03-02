@@ -5,6 +5,9 @@ const app = express();
 const nodemailer=require('nodemailer');
 const cors = require('cors');
 const OtpModel = require("./user/otp.model")
+const dotenv = require('dotenv');
+
+dotenv.config()
 
 app.use(express.json())
 app.use(cors())
@@ -12,8 +15,8 @@ app.use(cors())
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "pharmeasy565@gmail.com",
-      pass: "nzyieynqywfqrnmx",
+      user: "pharm4228@gmail.com",
+      pass: process.env.PASSWORD,
     },
   });
 
@@ -37,6 +40,7 @@ app.post('/signup-login',async (req, res) => {
         await otp.save();
         res.send({message:"User Created Successfully"})
       }
+      console.log(email)
       const mailOptions = {
         from: "pharmeasy@gmail.com",
         to: email,
@@ -70,7 +74,7 @@ app.post("/verify",async (req, res) => {
     }
 })
 
-app.listen(5000,async()=>{
+app.listen(process.env.PORT || 5000,async()=>{
     await connect()
     console.log("server listening on port 5000")
 })

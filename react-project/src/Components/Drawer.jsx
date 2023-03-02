@@ -58,6 +58,7 @@ function DrawerComp({ btnRef }) {
           duration: 5000,
           isClosable: true,
         })
+        onClose()
       }else{
         toast({
           title: 'Login failed.',
